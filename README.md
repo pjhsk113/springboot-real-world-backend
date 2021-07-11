@@ -4,6 +4,7 @@
 
 # How it works
 
+### developed based on [RealWorld API Spec](./api/README.md)
 
 # Getting started
 
