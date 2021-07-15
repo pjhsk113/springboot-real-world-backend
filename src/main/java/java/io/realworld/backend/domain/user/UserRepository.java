@@ -7,5 +7,5 @@ import java.io.realworld.backend.domain.user.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-
+    User save(User user);
 }
