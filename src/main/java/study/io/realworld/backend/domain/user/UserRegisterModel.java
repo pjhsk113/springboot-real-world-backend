@@ -1,4 +1,4 @@
-package java.io.realworld.backend.domain.user;
+package study.io.realworld.backend.domain.user;
 
 import lombok.Getter;
 

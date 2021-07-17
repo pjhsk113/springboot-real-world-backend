@@ -1,4 +1,4 @@
-package java.io.realworld.backend;
+package study.io.realworld.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

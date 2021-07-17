@@ -1,8 +1,8 @@
-package java.io.realworld.backend.aplication.user.request;
+package study.io.realworld.backend.aplication.user.request;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.io.realworld.backend.domain.user.UpdateProfileModel;
+import study.io.realworld.backend.domain.user.UpdateProfileModel;
 
 public class UpdateProfileRequestDTO {
     @NotBlank

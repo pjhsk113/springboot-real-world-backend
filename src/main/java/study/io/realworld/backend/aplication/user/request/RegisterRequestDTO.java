@@ -1,14 +1,16 @@
-package java.io.realworld.backend.aplication.user.request;
+package study.io.realworld.backend.aplication.user.request;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Getter;
+import lombok.*;
+import study.io.realworld.backend.domain.user.UserRegisterModel;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.io.realworld.backend.domain.user.UserRegisterModel;
 
 @JsonRootName("user")
-@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class RegisterRequestDTO {
     @NotBlank
     private String username;

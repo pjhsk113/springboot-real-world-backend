@@ -1,9 +1,8 @@
-package java.io.realworld.backend.aplication.user.response;
+package study.io.realworld.backend.aplication.user.response;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.Getter;
-
-import java.io.realworld.backend.domain.user.Profile;
+import study.io.realworld.backend.domain.user.Profile;
 
 @Getter
 @JsonRootName("profile")

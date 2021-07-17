@@ -1,4 +1,4 @@
-package java.io.realworld.backend.aplication.user;
+package study.io.realworld.backend.aplication.user;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.io.realworld.backend.aplication.user.request.RegisterRequestDTO;
-import java.io.realworld.backend.aplication.user.response.UserResponseDTO;
-import java.io.realworld.backend.domain.user.UserService;
+import study.io.realworld.backend.aplication.user.request.RegisterRequestDTO;
+import study.io.realworld.backend.aplication.user.response.UserResponseDTO;
+import study.io.realworld.backend.domain.user.UserService;
 
 @RestController
 @RequestMapping("/api")

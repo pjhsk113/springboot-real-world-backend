@@ -1,4 +1,4 @@
-package java.io.realworld.backend;
+package study.io.realworld.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

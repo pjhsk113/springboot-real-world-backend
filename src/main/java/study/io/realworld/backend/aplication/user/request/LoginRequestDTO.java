@@ -1,10 +1,10 @@
-package java.io.realworld.backend.aplication.user.request;
+package study.io.realworld.backend.aplication.user.request;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
+import study.io.realworld.backend.domain.user.UserLoginModel;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.io.realworld.backend.domain.user.UserLoginModel;
 
 @JsonRootName("user")
 public class LoginRequestDTO {
