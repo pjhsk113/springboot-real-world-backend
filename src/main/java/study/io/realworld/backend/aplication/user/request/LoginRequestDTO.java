@@ -13,7 +13,7 @@ public class LoginRequestDTO {
     @NotBlank
     private String password;
 
-    UserLoginModel toLoginRequest() {
+    public UserLoginModel toLoginRequest() {
         return new UserLoginModel(
                 this.email,
                 this.password
