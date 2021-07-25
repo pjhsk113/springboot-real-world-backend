@@ -3,7 +3,7 @@ package study.io.realworld.infra.security;
 import java.util.Optional;
 
 public class TokenExtractor {
-    private static final String HEADER_PERFIX = "Token ";
+    private static final String HEADER_PREFIX = "Token ";
     private final String header;
 
     public TokenExtractor(String header) {
@@ -15,10 +15,10 @@ public class TokenExtractor {
             return Optional.empty();
         }
 
-        if (header.length() < HEADER_PERFIX.length()) {
+        if (header.length() < HEADER_PREFIX.length()) {
             return Optional.empty();
         }
 
-        return Optional.of(header.substring(HEADER_PERFIX.length()));
+        return Optional.of(header.substring(HEADER_PREFIX.length()));
     }
 }
