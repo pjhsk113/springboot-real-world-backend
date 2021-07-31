@@ -34,8 +34,9 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                                     FilterChain filterChain) throws ServletException, IOException {
         TokenExtractor tokenExtractor = new TokenExtractor(httpServletRequest.getHeader(AUTH_HEADER));
         tokenExtractor.extract().ifPresent(accessToken -> {
+
             TokenProvider tokenProvider = new TokenProvider(signKey, accessToken);
-            String subject = tokenProvider.parseToken().orElseThrow();
+            String subject = tokenProvider.parseToken().orElseThrow(TokenParseException::new);
             User user = userRepository.findByEmail(subject).orElseThrow(
                     () -> new IllegalArgumentException("user not found"));
 
