@@ -11,7 +11,7 @@ import java.time.ZoneId;
 
 @Component
 public class TokenGenerator {
-    @Value("${token.sessionTime")
+    @Value("${token.sessionTime}")
     private Integer sessionTime;
     @Value("${token.signKey}")
     private String signKey;
